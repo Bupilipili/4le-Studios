@@ -12,6 +12,8 @@ body a{
 html, body{
 	font-size: 100%;
 	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 body{
 	background:#FFFFFF;
@@ -59,6 +61,13 @@ body{
 	letter-spacing: 1px;
 	font-weight: 300;
 	color: #FFFFFF;
+}
+.agileit-title h3 {
+    font-size: 4em;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
 }
 .navbar-default {
 	background: none;
@@ -340,10 +349,12 @@ body{
 	background:none;
 	border: solid 2px #FFFFFF;
 }
-/*-- //w3layouts-banner-info --*/
 /*-- about--*/
 .about,.markets,.portfolio,.testimonial-dot,.team,.blog,.mail{
 	padding: 4em 0;
+}
+.about,.portfolio,.team{
+	background-color: #212121;
 }
 .welcome{
 	border-bottom: 1px dashed #ccc;
@@ -395,8 +406,20 @@ body{
 }
 /*-- //about--*/
 /*-- markets --*/
+.agileinfo-dota {
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+.contact{
+	width: 100vw;
+}
 .markets{
-	background: #ececec;
+	background: url(../images/Main\ Image.png)no-repeat 0px 0px;
+	background-size: 27rem;
 }
 .wthree-heading h3,.agileits-top-heading h2 {
 	color: #212121;
@@ -414,7 +437,7 @@ body{
 }
 .agileits-icon-grid {
 	padding: 2em;
-	background: #FFFFFF;
+	background: lightgray;
 	box-shadow: 0 0px 1px rgb(107, 107, 107), 0 1px 2px rgba(0,0,0,.24);
 	border-radius: 12px;
 }
@@ -472,7 +495,7 @@ body{
 	z-index: 1;
 }
 .simplefilter li, .multifilter li, .sortandshuffle li {
-	color: #212121;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	padding: 10px 20px;
@@ -486,7 +509,7 @@ body{
 	-ms-border-radius: 30px;
 }
 .simplefilter li {
-	border: 2px solid #212121;
+	border: 2px solid #fff;
 }
 .simplefilter li.active {
 	border: 2px solid #ff9800;
@@ -1106,8 +1129,9 @@ ul.simplefilter {
 	margin-top: 3em;
 }
 .contact-w3lsright {
-	padding: 6em 6em;
+	padding: 2em 16em;
 	background: #ececec;
+	width: 100vw;
 }
 .contact-w3lsright h6 {
 	line-height: 1.5em;
@@ -1175,7 +1199,7 @@ ul.simplefilter {
 /*-- footer --*/ 
 .footer{
 	background: #333;
-	padding:4em 0;
+	padding:1em 0;
 }  
 .footer-title h3 {
 	font-size: 1.5em;
@@ -1324,6 +1348,12 @@ ul.simplefilter {
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
 }
+.footer-title {
+	padding-top: 2rem;
+}
+/* .amet-sed {
+    padding-left: 20rem;
+  } */
 /*-- //to-top --*/
 /*-- responsive --*/
 @media(max-width:1080px){
